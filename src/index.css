@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;400;600&display=swap');
+
 *{
   margin: 0px;
   padding: 0px;
@@ -6,4 +8,10 @@
 html, body{
   height: 100%;
   width: 100%;
+  font-family: Inter;
+  background-color: #1D1D1D;
+}
+
+button{
+  cursor: pointer;
 }

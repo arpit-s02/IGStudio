@@ -1,0 +1,58 @@
+.successRateCard{
+    width: 359px;
+    height: 377px;
+    border-radius: 14px;
+    border: 1.4px solid rgba(255, 255, 255, 0.10);
+    padding: 0px 23px;
+    box-sizing: border-box;
+}
+
+.active{
+    background-color: #2E2E2E;
+}
+
+.successRateCard .iconWrapper{
+    width: 101px;
+    height: 101px;
+    border-radius: 50%;
+    background-color: #FFF;
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.successRateCard h3{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px; /* 100% */
+    margin-top: 28px;
+}
+
+.successRateCard p{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 162.523%; /* 22.753px */
+    opacity: 0.3;
+    margin-top: 26px;
+}
+
+.successRateCard .readMoreButton{
+    width: 121px;
+    height: 43px;
+    border-radius: 23.5px;
+    background: #E3B748;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.successRateCard .readMoreButton span{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 162.523%; /* 22.753px */
+}

@@ -1,0 +1,17 @@
+.successRateWrapper{
+    margin-top: 170px;
+}
+
+.successRateWrapper h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 143.023%; /* 77.232px */
+    margin-bottom: 97px;
+}
+
+.successRateWrapper .cardsWrapper{
+    display: flex;
+    gap: 31px;
+}

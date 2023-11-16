@@ -1,0 +1,90 @@
+.heroInfo{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.heroInfo .heroDetails{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 66px;
+    font-weight: 500;
+    line-height: 147.523%;
+    width: 571px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.heroInfo .heroDetails .tagline span{
+    font-weight: 700;
+}
+
+.heroInfo .heroDetails .about{
+    color: rgb(88 88 88);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 162.523%;
+}
+
+.heroInfo .heroDetails .emailBox{
+    width: 438px;
+    height: 74px;
+    border-radius: 43px;
+    background-color: rgb(41 41 41);
+    display: flex;
+    align-items: center;
+}
+
+.heroInfo .heroDetails .emailBox .mailIcon{
+    margin-left: 28px;
+    margin-right: 12px;
+    fill: red;
+}
+
+.heroInfo .heroDetails .emailBox .mailInput{
+    width: 190px;
+    height: 100%;
+    background-color: inherit;
+    border: 0px;
+    color: rgb(88 88 88);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 162.523%;
+    margin-right: 43px;
+}
+
+.heroInfo .heroDetails .emailBox .mailInput::placeholder{
+    color: rgb(88 88 88);
+}
+
+.heroInfo .heroDetails .emailBox .mailInput:focus{
+    outline: none;
+}
+
+.heroInfo .heroDetails .emailBox .submitButton{
+    width: 137px;
+    height: 62px;
+    border-radius: 43px;
+    background-color: #E3B748;
+    border: 0px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 162.523%;
+}
+
+.heroInfo .lawyerImageWrapper{
+    width: 467.71px;
+    height: 467.71px;
+    border-radius: 55px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.heroInfo .lawyerImageWrapper img{
+    width: 100%;
+}
