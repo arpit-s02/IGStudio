@@ -1,4 +1,5 @@
 import Introduction from "../Introduction/Introduction";
+import PracticeAreasWrapper from "../PracticeAreasWrapper/PracticeAreasWrapper";
 import SuccessRateWrapper from "../SuccessRateWrapper/SuccessRateWrapper";
 import "./Content.css";
 
@@ -8,6 +9,8 @@ const Content = () => {
         <Introduction />
 
         <SuccessRateWrapper />
+
+        <PracticeAreasWrapper />
     </section>
   )
 }

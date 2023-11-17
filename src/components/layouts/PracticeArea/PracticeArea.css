@@ -1,0 +1,23 @@
+.practiceArea{
+    height: 342px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 14px;
+}
+
+.regular{
+    width: 358px;
+}
+
+.wide{
+    width: 752px;
+}
+
+.practiceArea span{
+    color: #FFFBF2;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px; /* 100% */
+    margin-bottom: 41px;
+}

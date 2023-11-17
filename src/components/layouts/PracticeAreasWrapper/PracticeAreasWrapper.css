@@ -1,0 +1,18 @@
+.practiceAreasWrapper{
+    margin-top: 179px;
+}
+
+.practiceAreasWrapper h1{
+    color: #FFF;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 143.023%; /* 77.232px */
+    text-align: center;
+}
+
+.practiceAreasWrapper .practiceAreas{
+    display: flex;
+    gap: 30px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+}
