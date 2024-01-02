@@ -1,0 +1,53 @@
+.clientReviewCard{
+    width: 359px;
+    height: 368px;
+    border-radius: 14px;
+    border: 1.4px solid rgba(255, 255, 255, 0.10);
+    background: #1D1D1D;
+    box-sizing: border-box;
+    padding: 36px 26px;
+}
+
+.clientImageWrapper{
+    width: 105px;
+    height: 102px;
+    border-radius: 105px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.clientImageWrapper img{
+    height: 100%;
+    width: 100%;
+}
+
+.clientName{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 100% */
+    margin-bottom: 10px;
+}
+
+.clientDesignation{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    margin-bottom: 22px;
+}
+
+.clientReview{
+    color:#FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 162.523%; /* 22.753px */
+    opacity: 0.3;
+}
+
+.active{
+    background-color: #2E2E2E;
+}
