@@ -26,3 +26,20 @@
     width: fit-content;
     transition: all 0.5s ease-in-out;
 }
+
+.leftButton{
+    width: 90.612px;
+    height: 90.612px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: #E6E6E6;
+    margin-right: 19px
+}
+
+.rightButton{
+    width: 90.612px;
+    height: 90.612px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: #E3B748;
+}

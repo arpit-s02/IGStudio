@@ -3,6 +3,8 @@ import ClientReviewCard from "../ClientReviewCard/ClientReviewCard";
 import JaneImage from "../../../assets/jane.png"
 import DevonImage from "../../../assets/devon.png"
 import RobertImage from "../../../assets/robert.png"
+import {ReactComponent as LeftArrow} from "../../../assets/leftArrow.svg"
+import {ReactComponent as RightArrow} from "../../../assets/rightArrow.svg"
 
 import "./ClientReviewWrapper.css"
 import { useState } from "react";
@@ -89,8 +91,12 @@ const ClientReviewWrapper = () => {
                 </div>
 
                 <div>
-                    <button onClick={navigateLeft}>Left</button>
-                    <button onClick={navigateRight}>right</button>
+                    <button onClick={navigateLeft} className="leftButton">
+                        <LeftArrow />
+                    </button>
+                    <button onClick={navigateRight} className="rightButton">
+                        <RightArrow />
+                    </button> 
                 </div>
 
             </div>
