@@ -16,7 +16,7 @@ const SuccessRateCard = ({successRate, content, isActive, handleChange}) => {
         <p>{content}</p>
 
         <div className="readMoreButton">
-            <span>Read More</span>
+          <span>Read More</span>
         </div>
     </div>
   )

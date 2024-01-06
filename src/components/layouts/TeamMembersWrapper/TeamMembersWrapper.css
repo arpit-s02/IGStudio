@@ -1,0 +1,10 @@
+.teamMembersWrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    row-gap: 44px;
+    flex-wrap: wrap;
+    margin-top: 135px;
+    position: relative;
+    left: 35px;
+}

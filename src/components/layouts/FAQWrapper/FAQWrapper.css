@@ -1,0 +1,29 @@
+.faqWrapper{
+    padding: 0px 172px;
+    margin-top: 197px;
+}
+
+.faqHeader{
+    margin-bottom: 14px;
+}
+
+.faqHeader h1{
+    color: #FFF;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 138.023%; /* 74.532px */
+}
+
+.faqContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.faqDescription{
+    width: 450px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 162.523%; /* 29.254px */
+    opacity: 0.3;
+}

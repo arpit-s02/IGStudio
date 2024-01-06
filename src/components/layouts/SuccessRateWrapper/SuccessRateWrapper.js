@@ -28,25 +28,25 @@ const SuccessRateWrapper = () => {
         setActiveIndex(index);
     }
 
-  return (
-    <div className="successRateWrapper">
-        <h1>Why Choose us?</h1>
+    return (
+        <div className="successRateWrapper">
+            <h1>Why Choose us?</h1>
 
-        <div className="cardsWrapper">
-            {successRateData.map((item, index) => {
-                return(
-                    <SuccessRateCard 
-                        key={item.id}
-                        successRate={item.successRate}
-                        content={item.content}
-                        isActive={activeIndex === index ? true : false}
-                        handleChange={() => handleChange(index)}
-                    />
-                )
-            })}
+            <div className="cardsWrapper">
+                {successRateData.map((item, index) => {
+                    return(
+                        <SuccessRateCard 
+                            key={item.id}
+                            successRate={item.successRate}
+                            content={item.content}
+                            isActive={activeIndex === index ? true : false}
+                            handleChange={() => handleChange(index)}
+                        />
+                    )
+                })}
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default SuccessRateWrapper;

@@ -1,0 +1,47 @@
+.footer{
+    height: 367px;
+    background-color: #171717;
+    margin-top: 242px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.footerNavbar{
+    display: flex;
+    gap: 136px;
+    align-items: center;
+}
+
+.footerNavlinks{
+    display: flex;
+    column-gap: 79px;
+}
+
+.navigationLink{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.1px;
+}
+
+.socialIconsContainer{
+    display: flex;
+    column-gap: 23px;
+}
+
+.termsContainer{
+    display: flex;
+    gap: 25px;
+}
+
+.termsContainer p{
+    color: #FFF;
+    font-family: Helvetica Now Display;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}

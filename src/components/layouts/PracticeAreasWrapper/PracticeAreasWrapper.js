@@ -48,25 +48,25 @@ const PracticeAreasWrapper = () => {
         },
     ]
 
-  return (
-    <div className="practiceAreasWrapper">
-        <h1>Area of Practices</h1>
+    return (
+        <div className="practiceAreasWrapper">
+            <h1>Area of Practices</h1>
 
-        <div className="practiceAreas">
+            <div className="practiceAreas">
 
-            {practiceAreasData.map((item) => {
-                return(
-                    <PracticeArea
-                        key={item.id}
-                        text = {item.text}
-                        image={item.image}
-                        wide={item.wide}
-                    />
-                )
-            })}
+                {practiceAreasData.map((item) => {
+                    return(
+                        <PracticeArea
+                            key={item.id}
+                            text = {item.text}
+                            image={item.image}
+                            wide={item.wide}
+                        />
+                    )
+                })}
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default PracticeAreasWrapper;

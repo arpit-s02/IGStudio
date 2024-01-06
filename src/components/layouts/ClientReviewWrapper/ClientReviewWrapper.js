@@ -1,18 +1,15 @@
-import ClientReviewCard from "../ClientReviewCard/ClientReviewCard";
-
 import JaneImage from "../../../assets/jane.png"
 import DevonImage from "../../../assets/devon.png"
 import RobertImage from "../../../assets/robert.png"
-import {ReactComponent as LeftArrow} from "../../../assets/leftArrow.svg"
-import {ReactComponent as RightArrow} from "../../../assets/rightArrow.svg"
 
 import "./ClientReviewWrapper.css"
 import { useState } from "react";
+import Carousel from "../Carousel/Carousel";
+import CarouselControl from "../CarouselControl/CarouselControl";
 
 const ClientReviewWrapper = () => {
 
-    const [translateValue, setTranslateValue] = useState(0)
-    const [activeIndex, setActiveIndex] = useState(-1)
+    const [translateIndex, setTranslateIndex] = useState(0);
 
     const reviewData = [
         {
@@ -59,30 +56,6 @@ const ClientReviewWrapper = () => {
         }
     ]
 
-
-    const navigateLeft = () => {
-        const translateWidth = 389
-        const maxTranslateValue = 0
-
-        if(translateValue >= maxTranslateValue){
-            return
-        }
-
-        setTranslateValue(translateValue + translateWidth)
-    }
-
-    const navigateRight = () => {
-        const totalCards = reviewData.length
-        const translateWidth = 389
-        const minTranslateValue = ((totalCards - 1) * translateWidth) * -1
-
-        if(translateValue <= minTranslateValue){
-            return
-        }
-
-        setTranslateValue(translateValue - translateWidth)
-    }
-
     return(
         <div className="clientReviewWrapper">
             <div className = "clientReviewHeader">
@@ -90,40 +63,18 @@ const ClientReviewWrapper = () => {
                     What says our happy Clients
                 </div>
 
-                <div>
-                    <button onClick={navigateLeft} className="leftButton">
-                        <LeftArrow />
-                    </button>
-                    <button onClick={navigateRight} className="rightButton">
-                        <RightArrow />
-                    </button> 
-                </div>
-
+                <CarouselControl 
+                    translateIndex={translateIndex}
+                    setTranslateIndex={setTranslateIndex}
+                    dataLength={reviewData.length}
+                />
             </div>
 
-            <div style = {{width: '100%', overflow:'hidden'}}>
-                <div 
-                    className="reviewCardsContainer"
-                    style={{transform: `translateX(${translateValue}px)`}}
-                >
-                    {
-                        reviewData.map((item, index) => {
-                            return (
-                                <ClientReviewCard 
-                                    key = {item.id}
-                                    name = {item.name}
-                                    image = {item.image}
-                                    designation={item.designation}
-                                    review={item.review}
-                                    isActive = {index === activeIndex ? true : false}
-                                    handleChange = {() => setActiveIndex(index)}
-                                />
-                            )
-                        })
-                    }
-                </div>
-
-            </div>
+            <Carousel 
+                reviewData={reviewData}
+                translateIndex={translateIndex}
+                translateValue={389}
+            />
         </div>
     )
 }

@@ -1,0 +1,23 @@
+.heroDetails{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 66px;
+    font-weight: 500;
+    line-height: 147.523%;
+    width: 571px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.heroDetails .tagline span{
+    font-weight: 700;
+}
+
+.heroDetails .about{
+    color: rgb(88 88 88);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 162.523%;
+}

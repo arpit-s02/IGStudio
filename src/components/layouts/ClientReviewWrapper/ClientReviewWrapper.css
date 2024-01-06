@@ -1,4 +1,5 @@
 .clientReviewWrapper{
+    padding: 0px 150px;
     margin-top: 186px;
 }
 
@@ -18,28 +19,4 @@
     font-style: normal;
     font-weight: 600;
     line-height: 143.023%; /* 77.232px */
-}
-
-.reviewCardsContainer{
-    display: flex;
-    gap: 30px;
-    width: fit-content;
-    transition: all 0.5s ease-in-out;
-}
-
-.leftButton{
-    width: 90.612px;
-    height: 90.612px;
-    border-radius: 50%;
-    border: 0px;
-    background-color: #E6E6E6;
-    margin-right: 19px
-}
-
-.rightButton{
-    width: 90.612px;
-    height: 90.612px;
-    border-radius: 50%;
-    border: 0px;
-    background-color: #E3B748;
 }
